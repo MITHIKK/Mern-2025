@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cultural Registration Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #e0f7fa; padding: 30px;">
+
+  <h2 style="text-align: center;">Cultural Event Registration</h2>
+
+  <form action="/submit" method="post" 
+        style="max-width: 500px; margin: auto; background-color: white; padding: 25px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+
+    <label for="name" style="font-weight: bold;">Full Name:</label><br>
+    <input type="text" id="name" name="name" required
+      style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"><br>
+
+    <label for="email" style="font-weight: bold;">Email:</label><br>
+    <input type="email" id="email" name="email" required
+      style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"><br>
+
+    <label for="phone" style="font-weight: bold;">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required
+      style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"><br>
+
+    <label for="college" style="font-weight: bold;">College Name:</label><br>
+    <input type="text" id="college" name="college" required
+      style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"><br>
+
+    <label for="event" style="font-weight: bold;">Select Event:</label><br>
+    <select id="event" name="event" required
+      style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+      <option value="">-- Choose an Event --</option>
+      <option value="dance">Dance</option>
+      <option value="singing">Singing</option>
+      <option value="drama">Drama</option>
+      <option value="mimicry">Mimicry</option>
+      <option value="fashion-show">Fashion Show</option>
+    </select><br>
+
+    <label for="gender" style="font-weight: bold;">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" required> Male
+    <input type="radio" id="female" name="gender" value="female" required> Female
+    <input type="radio" id="other" name="gender" value="other" required> Other<br><br>
+
+    <input type="submit" value="Register"
+      style="width: 100%; padding: 12px; background-color: #00796b; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer;">
+
+  </form>
+
+</body>
+</html>
